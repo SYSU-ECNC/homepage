@@ -54,5 +54,5 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.TENCENT_CLOUD_SECRET_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.TENCENT_CLOUD_SECRET_KEY }}
-        run: -|
-          rclone sync ./.output/public cos:/
+          COS_BUCKET: ${{ secrets.COS_BUCKET }}
+        run: rclone sync ./.output/public cos:$COS_BUCKET
