@@ -1,6 +1,6 @@
 export default defineAppConfig({
   docus: {
-    title: 'ECNC',
+    title: 'ECNC 网管技术分享',
     description: '网管技术分享',
     // image: '',
     aside: {
